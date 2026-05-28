@@ -101,6 +101,7 @@ write_netlist inv_syn_dtmf_dft.v
 ```bash
 innovus -stylus
 ```
+<img width="750" height="344" alt="image" src="https://github.com/user-attachments/assets/305a6cfe-0787-4b50-a8d7-b7239946f7a5" />
 
 Via GUI: **File → Import Design**, then fill in:
 
@@ -127,6 +128,7 @@ Initialize the floorplan via **Floorplan → Initialize Floorplan**. Ungroup the
 ```tcl
 # Select DTMF_INST in the Physical view, then press Shift-G once
 ```
+<img width="547" height="547" alt="image" src="https://github.com/user-attachments/assets/a8615580-009e-4e25-b045-7798aa2dfa30" />
 
 Check the design via **Verify → Check Design** before proceeding.
 
@@ -182,6 +184,7 @@ Save the session:
 ```tcl
 # File → Save Design → floorplan.inn
 ```
+<img width="547" height="547" alt="image" src="https://github.com/user-attachments/assets/58e04139-ba7c-42c4-8a57-a9fb6c0b1689" />
 
 ---
 
@@ -197,6 +200,7 @@ place_opt_design
 write_def_by_section scan.def -no_nets -no_comp -scan_chains
 write_db placeOpt.inn
 ```
+<img width="625" height="625" alt="image" src="https://github.com/user-attachments/assets/bddad5cf-a200-4c06-ad23-c54d42267f56" />
 
 Check post-placement status, WNS, and scan chain display via **Place → Display → Scan Chain**.
 
@@ -261,6 +265,7 @@ clock_opt_design
 ```
 
 Check the CTS log for constraint violations. View the clock tree in the **Clock → CCOpt Clock Tree Debugger**.
+<img width="625" height="625" alt="image" src="https://github.com/user-attachments/assets/6c5b7053-e71c-42a6-81f9-d0e958d3405c" />
 
 Post-CTS timing:
 
@@ -335,6 +340,7 @@ Save:
 ```tcl
 # File → Save Design → DTMF_detailrouted.inn
 ```
+<img width="656" height="656" alt="image" src="https://github.com/user-attachments/assets/52a35ede-5f72-4a22-8e28-8fcf582b041d" />
 
 ---
 
@@ -371,6 +377,7 @@ Run DRC and connectivity checks:
 # Verify → Verify Connectivity (Geometry Loop option) → OK
 check_drc -view_window
 ```
+<img width="688" height="227" alt="image" src="https://github.com/user-attachments/assets/d5a80e48-f519-4074-ace7-26c4369ce1b7" />
 
 Browse violations via **Tools → Violation Browser**. Fix loop segments by selecting and pressing `d` → Delete. Rerun checks after each fix.
 
