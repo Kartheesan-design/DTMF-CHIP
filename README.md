@@ -51,6 +51,9 @@ Synthesis → Floorplan → Power Planning → Placement → Timing (pre-CTS)
 
 ## Stage 1 — Synthesis 
 
+
+<img width="469" height="469" alt="image" src="https://github.com/user-attachments/assets/bd0d7315-5e8c-424d-ba64-b0cd98a8043c" />
+
 Start Innovus in Stylus mode:
 
 ```bash
